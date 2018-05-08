@@ -4,13 +4,13 @@ This is a skeleton for a web project using PHP 5.6 on a Debian Jesse base. I use
 
 The layout is very simple:
 
-        --- docker
-	    |   |-- Dockerfile
-    	|-- docker-compose.yml
-    	|-- LICENSE
-    	|-- README.md
-    	|-- www
-    	    |-- index.php
+* docker
+ * Dockerfile
+* docker-compose.yml
+* LICENSE
+* README.md
+* www
+ * index.php
 
 The ```www``` directory gets mapped to ```/var/www/html``` so you can edit files locally and they are automatically available to the web server running in the container.
 
@@ -22,3 +22,4 @@ To stop the container:
 
         $ sudo docker-compose stop
 
+This skeleton project is based on the article [Getting started with Docker for local development](https://perchrunway.com/blog/2017-01-19-getting-started-with-docker-for-local-development) which is the best introduction to this material that I've read.
